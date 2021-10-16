@@ -1,5 +1,13 @@
 import React from 'react';
 
-export const Home = () => {
-	return <div>hi</div>;
+import { Layout } from '../components/global/Layout';
+
+const Home = () => {
+	return (
+		<Layout title="Home">
+			<div className="bg-black">Hi</div>
+		</Layout>
+	);
 };
+
+export default Home;
