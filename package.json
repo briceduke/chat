@@ -1,34 +1,42 @@
 {
-	"name": "chat",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"c": "git add . && cz",
-		"p": "yarn c && git push origin $*"
-	},
-	"dependencies": {
-		"next": "11.1.2",
-		"react": "17.0.2",
-		"react-dom": "17.0.2"
-	},
-	"devDependencies": {
-		"@types/node": "^16.11.0",
-		"@types/react": "^17.0.30",
-		"autoprefixer": "^10.3.7",
-		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.0.1",
-		"eslint-config-next": "11.1.2",
-		"postcss": "^8.3.9",
-		"tailwindcss": "^2.2.17",
-		"typescript": "^4.4.4"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	}
+  "name": "chat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "c": "git add . && cz",
+    "p": "yarn c && git push origin $*",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "@types/node": "^16.11.0",
+    "@types/react": "^17.0.30",
+    "autoprefixer": "^9",
+    "babel-loader": "^8.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "typescript": "^4.4.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

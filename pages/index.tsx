@@ -1,11 +1,12 @@
 import React from 'react';
 
+import BtnPrimary from '../components/button/Primary';
 import { Layout } from '../components/global/Layout';
 
 const Home = () => {
 	return (
 		<Layout title="Home">
-			<div className="bg-black">Hi</div>
+			<BtnPrimary>Hey</BtnPrimary>
 		</Layout>
 	);
 };
